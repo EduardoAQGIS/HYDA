@@ -5,11 +5,6 @@ El sistema asiste en la identificación de divisorias empleando información top
 
 ---
 
-## 🌎 Descripción general
-
-HYDA ofrece un enfoque semiautomático para generar **divisorias de aguas y límites de cuencas hidrográficas** utilizando curvas de nivel.  
-Mediante análisis geométrico y relacional de las curvas, permite delinear polígonos hidrológicos directamente en el lienzo de QGIS de manera interactiva.
-
 ### 🔍 Funcionalidades
 - Delimitación interactiva de divisorias hidrológicas.
 - Uso de **curvas de nivel vectoriales** como fuente principal.
