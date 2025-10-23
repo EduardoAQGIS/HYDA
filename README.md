@@ -18,7 +18,7 @@ Mediante análisis geométrico y relacional de las curvas, permite delinear pol�
 
 ---
 
-## 🧠 Uso
+## 💧 Uso
 
 1. Selecciona la **capa de curvas de nivel** (tipo línea) que contenga las elevaciones.  
 2. Elige el **campo de elevación** correspondiente dentro de esa capa.  
