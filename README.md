@@ -1,7 +1,7 @@
 # HYDA – Asistente de Delimitación Hidrológica
 
 **HYDA (Hydrological Delimitation Assistant)** está diseñado para **asistir en la delimitación de límites hidrológicos** a partir de datos vectoriales de curvas de nivel.  
-El sistema automatiza la identificación de divisorias y polígonos hidrológicos empleando información topográfica vectorial dentro del entorno QGIS.
+El sistema asiste en la identificación de divisorias empleando información topográfica vectorial dentro del entorno QGIS.
 
 ---
 
@@ -15,33 +15,20 @@ Mediante análisis geométrico y relacional de las curvas, permite delinear pol�
 - Uso de **curvas de nivel vectoriales** como fuente principal.
 - Generación paso a paso de **líneas divisorias** y **polígonos de cuenca**.
 - Incorporación de **puntos auxiliares** y **puntos de conexión** para ajustes finos.
-- Integración con herramientas de **snapping** y **índices espaciales** de QGIS para mayor precisión.
-- Interfaz acoplable (dock) con retroalimentación visual en tiempo real.
 
 ---
 
 ## 🧭 Uso básico
 
-1. Carga una capa de **curvas de nivel vectoriales** con su campo de elevaciones.
-2. Abre el panel **HYDA** en QGIS y selecciona la capa topográfica y el campo de elevación.
-3. Define **dos puntos iniciales** sobre el mapa para iniciar la delimitación.
-4. Si es necesario, añade **puntos auxiliares** para extender o modificar la divisoria.
-5. HYDA procesará automáticamente las curvas de nivel y generará el **polígono de cuenca** correspondiente.
+1. Selecciona la **capa de curvas de nivel** (tipo línea) que contenga las elevaciones.  
+2. Elige el **campo de elevación** correspondiente dentro de esa capa.  
+3. Presiona el botón **CARGAR TOPO** para inicializar la topografía y crear el índice espacial.  
+4. Selecciona una **capa de destino (poligonal)** donde se almacenarán los resultados generados.  
+5. Usa los botones de delimitación del panel:
+   - 🅰️ **Inicio:** define dos puntos iniciales para crear una nueva delimitación.  
+   - 🅱️ **Seleccionar polígono:** permite elegir un polígono existente para editar o ampliar.  
+   - 🅲 **Puntos directos:** agrega conexiones manuales entre líneas divisorias.  
+   - 🅳 **Puntos auxiliares:** extiende o ajusta una delimitación ya creada.  
+6. HYDA procesará automáticamente las curvas de nivel y generará el **polígono de cuenca** correspondiente en la capa de destino.  
 
 ---
-
-## 🧠 Fundamento conceptual
-
-El algoritmo de HYDA se basa en principios geomorfológicos y topográficos, evaluando la relación entre curvas de nivel para determinar líneas divisorias del flujo.  
-El sistema:
-- Analiza la jerarquía altimétrica y la proximidad entre curvas.  
-- Detecta puntos de cresta y cambios de pendiente relevantes.  
-- Construye líneas divisorias evitando cruces topológicos y autointersecciones.  
-
-Este enfoque vectorial resulta especialmente útil en contextos donde no se dispone de un **Modelo Digital de Elevación (DEM)** o se requiere una representación **puramente vectorial** de la cuenca.
-
----
-
-## 📁 Estructura del repositorio
-
-
