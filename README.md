@@ -1,4 +1,4 @@
-# 🌊 HYDA — Hydrological Delimitation Assistant
+# HYDA — Hydrological Delimitation Assistant
 
 **HYDA** (Hydrological Delimitation Assistant) es un complemento para **QGIS** diseñado para agilizar y optimizar la delimitación de cuencas hidrográficas directamente sobre **curvas de nivel vectoriales**.  
 Combina algoritmos geométricos con interacción visual, ofreciendo una herramienta semiautomática, precisa y flexible.
