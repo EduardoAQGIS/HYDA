@@ -9,6 +9,7 @@
 HYDA automatiza parte del proceso de delimitación de cuencas utilizando la topología de curvas de nivel vectoriales.  
 El usuario define los puntos de salida de la cuenca, y el complemento genera el polígono correspondiente siguiendo la estructura geométrica.  
 Combina algoritmos geométricos con interacción visual, ofreciendo una herramienta semiautomática, precisa y flexible.
+
 ---
 
 ## 🖱️ Guía de usuario
